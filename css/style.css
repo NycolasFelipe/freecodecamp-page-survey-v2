@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+body {
+    background-image: url("../img/background.jpg");
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1em;
+}
+
+div#interface {
+    display: grid;
+}
+
+
+/*Header below*/
+
+header {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+    height: 180px;
+}
+
+div#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: -25px;
+}
+
+div#logo img {
+    margin-right: 10px;
+    height: 68px;
+}
+
+/*Header above*/
+
+
+/*Content below*/
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+fieldset {
+    border: none;
+    padding: 1% 4%;
+    color: white;
+}
+
+fieldset:nth-child(3) {
+    margin-bottom: 30px;
+}
+
+[type='text'], [type='email'], [type='number'] {
+    width: 97%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+hr {
+    margin: 10px 15px;
+    border-color: rgba(0, 0, 0, 0.178);
+}
+
+div#background-form {
+    background: rgba(34, 28, 48, 0.842);;
+    border-radius: 5px;
+    width: 700px;
+    margin-right: 8px;
+}
+
+fieldset#streaming img {
+    position: absolute;
+}
+
+fieldset#streaming label {
+    margin-left: 25px;
+}
+
+fieldset#comment-section {
+    text-align: center;
+}
+
+p#comment-section-legend {
+    text-align: left;
+}
+
+textarea {
+    width: 96%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-bottom: -10px;
+}
+
+input#submit {
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 0.9em;
+    width: 99%;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgb(80, 163, 80), rgb(29, 146, 29));
+    box-shadow: 1px 1px 2px black;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+input#submit:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, rgb(72, 150, 72), rgb(28, 131, 28));
+}
+
+/*Content above*/
+
+
+/*Footer below*/
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/*@media below*/
+
+@media (max-width: 500px) {
+    body {
+        font-size: 1.3em;
+        background-size: cover;
+    }
+
+    /*@media header below*/
+
+    header {
+        margin: 0px 0;
+        height: 140px;
+    }
+
+    div#logo {
+        font-size: 1em;
+    }
+
+    div#logo img {
+        margin-right: 10px;
+        height: 50px;
+    }
+
+    p#description {
+        font-size: 0.8em;
+
+    }
+
+    /*@media header above*/
+
+    /*@media content below*/
+
+    h1 {
+        text-align: left;
+        padding: 2% 6% 3%;
+    }
+
+    fieldset {
+        padding: 0 6%;
+    }
+
+    [type='text'], [type='email'], [type='number'] {
+        width: 93%;
+        font-size: 16px;
+    }
+
+    select {
+        font-size: 16px;
+    }
+
+    hr {
+        margin: 5px 15px;
+    }
+
+    textarea {
+        width: 92%;
+        margin-bottom: -15px;
+    }
+
+    input#submit {
+        width: 99%;
+    }
+
+    div#background-form {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    /*@media content above*/
+
+}
+
+/*@media above*/
