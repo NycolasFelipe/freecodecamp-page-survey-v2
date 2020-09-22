@@ -9,7 +9,6 @@
 </head>
 <body>
     <div id="interface">
-
     <header>
         <div id="logo">
             <img id="png-logo" src="img/logo.png" alt="Logo">
@@ -20,19 +19,19 @@
 
     <main>
         <div id="background-form">
-        <h1>This is a survey on music preferences! &#127925;</h1>
+        <h1 id="title">This is a survey on music preferences! &#127925;</h1>
         <hr>
 
         <form id="survey-form" action="">
             <fieldset id="user-info">
                 <p><label id="name-label" for="name">Name</label></p>
-                <p><input type="text" name="tName" id="name" placeholder="Enter your name"></p>
+                <p><input type="text" name="tName" id="name" placeholder="Enter your name" required></p>
 
-                <p"><label id="email-label" for="mail">Email</label></p>
-                <p><input type="email" name="tMail" id="mail" placeholder="Enter your email"></p>
+                <p"><label id="email-label" for="email">Email</label></p>
+                <p><input type="email" name="tMail" id="email" placeholder="Enter your email" required></p>
 
-                <p><label id="number-label" for="age">Age</label></p>
-                <p><input type="number" name="tAge" id="age" min="10" max="99" placeholder="Enter your age"></p>
+                <p><label id="number-label" for="number">Age</label></p>
+                <p><input type="number" name="tAge" id="number" min="10" max="99" placeholder="Enter your age"></p>
             </fieldset>
             <hr>
 
@@ -50,39 +49,39 @@
 
             <fieldset id="play-instrument">
                 <p>Do you play a musical instrument?</p>
-                <p><input type="radio" name="name" id="playYes" checked><label for="playYes"> Yes</label></p>
-                <p><input type="radio" name="name" id="playYesMore"><label for="playYesMore"> Yes, more than one</label></p>
-                <p><input type="radio" name="name" id="playNo"><label for="playNo"> No</label></p>
+                <p><input value="radio" type="radio" name="name" id="playYes" checked><label for="playYes"> Yes</label></p>
+                <p><input value="radio" type="radio" name="name" id="playYesMore"><label for="playYesMore"> Yes, more than one</label></p>
+                <p><input value="radio" type="radio" name="name" id="playNo"><label for="playNo"> No</label></p>
             </fieldset>
             <hr>
 
             <fieldset id="follow-artist">
                 <p>Do you follow your favorite artists on social media?</p>
-                <p><input type="radio" name="favArt" id="followYes" checked><label for="followYes"> Yes, but no more than one social media site</label></p>
-                <p><input type="radio" name="favArt" id="followYesMore"><label for="followYesMore"> Yes, in more than one social media site</label></p>
-                <p><input type="radio" name="favArt" id="followNo"><label for="followNo"> No, I don't follow artists on social media</label></p>
+                <p><input value="radio" type="radio" name="favArt" id="followYes" checked><label for="followYes"> Yes, but no more than one social media site</label></p>
+                <p><input value="radio" type="radio" name="favArt" id="followYesMore"><label for="followYesMore"> Yes, in more than one social media site</label></p>
+                <p><input value="radio" type="radio" name="favArt" id="followNo"><label for="followNo"> No, I don't follow artists on social media</label></p>
             </fieldset>
             <hr>
 
             <fieldset id="streaming">
                 <p>Which music streaming service do you use?</p>
-                <p><input type="radio" name="streamApp" id="spotify" checked>
+                <p><input value="radio" type="radio" name="streamApp" id="spotify" checked>
                     <img class="streamIcon" src="img/spotify.png" alt="Spotify Icon" width="20px"><label for="spotify">Spotify</label>
                 </p>
 
-                <p><input type="radio" name="streamApp" id="appleMusic">
+                <p><input value="radio" type="radio" name="streamApp" id="appleMusic">
                     <img class="streamIcon" src="img/apple-music.png" alt="Apple Music Icon" width="20px"><label for="appleMusic">Apple Music</label>
                 </p>
 
-                <p><input type="radio" name="streamApp" id="tidal">
+                <p><input value="radio" type="radio" name="streamApp" id="tidal">
                     <img class="streamIcon" src="img/tidal.png" alt="Tidal Icon" width="20px"><label for="tidal">Tidal</label>
                 </p>
 
-                <p><input type="radio" name="streamApp" id="AmazonPrimeMusic">
+                <p><input value="radio" type="radio" name="streamApp" id="AmazonPrimeMusic">
                     <img class="streamIcon" src="img/amazon-prime-music.png" alt="Amazon Prime Music Icon" width="20px"><label for="AmazonPrimeMusic">Amazon Prime Music</label>
                 </p>
 
-                <p><input type="radio" name="streamApp" id="youtubeMusic">
+                <p><input value="radio" type="radio" name="streamApp" id="youtubeMusic">
                     <img class="streamIcon" src="img/youtube-music.png" alt="YoutubeMusic Icon" width="20px"><label for="youtubeMusic">YoutubeMusic</label>
                 </p>
             </fieldset>
@@ -90,20 +89,20 @@
 
             <fieldset id="music-styles">
                 <p>What music styles do you like? <span>(Check all that apply)</span></p>
-                <p><input type="checkbox" name="tHipHop"    id="hipHop">    <label for="hipHop"     > Hip Hop/Rap</label></p>
-                <p><input type="checkbox" name="tPop"       id="pop">       <label for="pop"        > Pop</label></p>
-                <p><input type="checkbox" name="tTechno"    id="techno">    <label for="techno"     > Techno</label></p>
-                <p><input type="checkbox" name="tRnb"       id="rnb">       <label for="rnb"        > R&B</label></p>
-                <p><input type="checkbox" name="tPunk"      id="punk">      <label for="punk"       > Punk</label></p>
-                <p><input type="checkbox" name="tAltRock"   id="altRock">   <label for="altRock"    > Alternative Rock</label></p>
-                <p><input type="checkbox" name="tHouse"     id="house">     <label for="house"      > House</label></p>
-                <p><input type="checkbox" name="tCountry"   id="country">   <label for="country"    > Country</label></p>
-                <p><input type="checkbox" name="tIndieRock" id="indieRock"> <label for="indieRock"  > Indie Rock</label></p>
-                <p><input type="checkbox" name="tElectro"   id="electro">   <label for="electro"    > Electro</label></p>
-                <p><input type="checkbox" name="tLatin"     id="latin">     <label for="latin"      > Latin</label></p>
-                <p><input type="checkbox" name="tJazz"      id="jazz">      <label for="jazz"       > Jazz</label></p>
-                <p><input type="checkbox" name="tGospel"    id="gospel">    <label for="gospel"     > Gospel</label></p>
-                <p><input type="checkbox" name="tOther"     id="other">     <label for="other"      > Other</label></p>
+                <p><input type="checkbox" name="tHipHop"    id="hipHop"     value="hipHop">    <label for="hipHop"     > Hip Hop/Rap</label></p>
+                <p><input type="checkbox" name="tPop"       id="pop"        value="pop">       <label for="pop"        > Pop</label></p>
+                <p><input type="checkbox" name="tTechno"    id="techno"     value="techno">    <label for="techno"     > Techno</label></p>
+                <p><input type="checkbox" name="tRnb"       id="rnb"        value="rnb">       <label for="rnb"        > R&B</label></p>
+                <p><input type="checkbox" name="tPunk"      id="punk"       value="punk">      <label for="punk"       > Punk</label></p>
+                <p><input type="checkbox" name="tAltRock"   id="altRock"    value="altRock">   <label for="altRock"    > Alternative Rock</label></p>
+                <p><input type="checkbox" name="tHouse"     id="house"      value="house">     <label for="house"      > House</label></p>
+                <p><input type="checkbox" name="tCountry"   id="country"    value="country">   <label for="country"    > Country</label></p>
+                <p><input type="checkbox" name="tIndieRock" id="indieRock"  value="indieRock"> <label for="indieRock"  > Indie Rock</label></p>
+                <p><input type="checkbox" name="tElectro"   id="electro"    value="electro">   <label for="electro"    > Electro</label></p>
+                <p><input type="checkbox" name="tLatin"     id="latin"      value="latin">     <label for="latin"      > Latin</label></p>
+                <p><input type="checkbox" name="tJazz"      id="jazz"       value="jazz">      <label for="jazz"       > Jazz</label></p>
+                <p><input type="checkbox" name="tGospel"    id="gospel"     value="gospel">    <label for="gospel"     > Gospel</label></p>
+                <p><input type="checkbox" name="tOther"     id="other"      value="other">     <label for="other"      > Other</label></p>
             </fieldset>
             <hr>
 
@@ -112,7 +111,6 @@
                 <p><textarea name="tComment" id="comment" cols="30" rows="8" placeholder="Enter your coment here..."></textarea></p>
                 <input id="submit" type="submit" value="Submit">
             </fieldset>
-
         </form>
         </div>
     </main>
@@ -120,8 +118,6 @@
     <footer>
         <p>Copyright &copy; 2020 — Designed by <a href="https://github.com/NycolasFelipe">NycolasFelipe</a></p>
     </footer>
-
-
 
 </div>
 </body>
