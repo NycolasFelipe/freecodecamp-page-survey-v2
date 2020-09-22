@@ -146,7 +146,7 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: rgb(182, 211, 255);
     text-decoration: none;
 }
 
@@ -198,7 +198,7 @@ footer a:hover {
     }
 
     [type='text'], [type='email'], [type='number'] {
-        width: 93%;
+        width: 93.5%;
         font-size: 16px;
     }
 
@@ -213,10 +213,11 @@ footer a:hover {
     textarea {
         width: 92%;
         margin-bottom: -15px;
+        font-size: 16px;
     }
 
     input#submit {
-        width: 99%;
+        width: 96%;
     }
 
     div#background-form {
